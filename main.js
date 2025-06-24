@@ -17,9 +17,12 @@ app.$mount()
 import { createSSRApp } from 'vue'
 
 import uView from 'uview-ui';
+import { createPinia } from 'pinia';
 
+const pinia = createPinia();
 export function createApp() {
   const app = createSSRApp(App)
+  app.use(pinia);
   return {
     app,
     uView
