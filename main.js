@@ -14,21 +14,17 @@ import App from './App.vue';
 // #endif
 
 // #ifdef VUE3
-import { createApp } from 'vue';
+import { createSSRApp } from 'vue'
+import { createPinia } from 'pinia'
+import uviewPlus from 'uview-plus'
 
-import uView from 'uview-ui';
-import { createPinia } from 'pinia';
-
-const pinia = createPinia();
-
-const app = createApp({
-    ...App,
-    uView,
-});
-
-app.use(pinia);
-// app.use();
-
-app.mount('#app');
-
+const pinia = createPinia()
+export function createApp() {
+  const app = createSSRApp(App)
+  app.use(uviewPlus)
+  app.use(pinia)
+  return {
+    app
+  }
+}
 // #endif

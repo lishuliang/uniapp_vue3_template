@@ -4,6 +4,7 @@
         <view class="text-area">
             <text class="title">{{ title }}</text>
         </view>
+		<u-button type="primary" text="月落"></u-button>
     </view>
 </template>
 
