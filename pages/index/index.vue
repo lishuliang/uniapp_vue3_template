@@ -16,7 +16,7 @@ userStore.setToken('1234567890');
 console.log(userStore.token);
 </script>
 
-<style>
+<style scoped lang="scss">
 .content {
     display: flex;
     flex-direction: column;

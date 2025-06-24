@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@dcloudio/vite-plugin-uni": "^3.0.0-alpha-3000020210521001",
     "pinia": "^3.0.3",
     "uview-ui": "^2.0.38"
   }

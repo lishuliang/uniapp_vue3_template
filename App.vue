@@ -1,9 +1,6 @@
-<script>
-export default {
-    onLaunch: function () {},
-    onShow: function () {},
-    onHide: function () {},
-};
+<script setup>
+import { onLaunch } from '@dcloudio/uni-app';
+onLaunch(() => {});
 </script>
 
 <style>
