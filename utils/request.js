@@ -7,11 +7,11 @@ const baseUrl = config.baseUrl;
 
 const request = (config) => {
     // 是否需要设置 token
-	const isToken = (config.headers || {}).isToken === false
-	config.header = config.header || {}
-	if (getToken() && !isToken) {
-		config.header['Authorization'] = 'Bearer ' + getToken()
-	}
+    const isToken = (config.headers || {}).isToken === false;
+    config.header = config.header || {};
+    if (getToken() && !isToken) {
+        config.header['Authorization'] = 'Bearer ' + getToken();
+    }
 
     // get请求映射params参数
     if (config.params) {
@@ -39,7 +39,7 @@ const request = (config) => {
                 }
             })
             .catch((error) => {
-                let { message } = error;
+                const message = error.errMsg;
                 if (message === 'Network Error') {
                     message = '后端接口连接异常';
                 } else if (message.includes('timeout')) {
