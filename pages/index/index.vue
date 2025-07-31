@@ -2,7 +2,7 @@
     <view class="content">
         <image class="logo" src="/static/logo.png"></image>
         <view class="text-area">
-            <text class="title">{{ title }}</text>
+            <text class="title mt-20px">{{ title }}</text>
         </view>
 		<u-button type="primary" text="月落"></u-button>
     </view>

@@ -4,5 +4,9 @@
         "dayjs": "^1.11.13",
         "pinia": "^3.0.3",
         "uview-plus": "^3.4.43"
+    },
+    "devDependencies": {
+        "unocss": "^0.58.9",
+        "unocss-preset-weapp": "^66.0.2"
     }
 }

@@ -1,4 +1,5 @@
 import App from './App.vue';
+import 'uno.css'
 
 // #ifndef VUE3
 // import Vue from 'vue';
