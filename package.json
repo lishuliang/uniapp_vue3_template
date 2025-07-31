@@ -8,5 +8,8 @@
     "devDependencies": {
         "unocss": "^0.58.9",
         "unocss-preset-weapp": "^66.0.2"
+    },
+    "volta": {
+        "node": "18.12.0"
     }
 }

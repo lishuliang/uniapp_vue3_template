@@ -1,4 +1,4 @@
-import presetWeapp from 'unocss-preset-weapp';
+import { presetWeapp } from 'unocss-preset-weapp';
 import {
     extractorAttributify,
     transformerClass,
